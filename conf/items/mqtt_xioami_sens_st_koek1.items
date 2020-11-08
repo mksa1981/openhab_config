@@ -1,0 +1,5 @@
+Number  Xioami_Temperature       "Temperature [%.1f °C]"     <temperature>   (gStore10, gAT)                                                    { channel = "mqtt:topic:xioami_sensor_stueetage_koekken1:temperature" }
+Number  Xioami_Humidity          "Humidity [%.0f %%]"        <humidity>      (gStore10, gAT)
+	{ channel = "mqtt:topic:xioami_sensor_stueetage_koekken1:humidity" }
+Number  Xioami_Battery       	"Battery [%.0f %%]"        <battery>      (gStore10, gAT)
+	{ channel = "mqtt:topic:xioami_sensor_stueetage_koekken1:battery" }

@@ -1,0 +1,7 @@
+/* Xioami sensor - Stueetage køkken1 */
+Thing mqtt:topic:xioami_sensor_stueetage_koekken1  "Xioami Sensor - Stueetage køkken 1" (mqtt:broker:home) @ "Stueetage køkken 1 " {
+Channels:
+	Type number :	temperature   "Temperature"       [ stateTopic="home/xioami_sensor/4c:65:a8:db:a4:57",transformationPattern="JSONPATH:$.Temp"]
+    	 Type number : 	humidity      "Humidity"          [ stateTopic="home/xioami_sensor/4c:65:a8:db:a4:57",transformationPattern="JSONPATH:$.Humidity"]
+        Type number : 	battery       "Battery"       [ stateTopic="home/xioami_sensor/4c:65:a8:db:a4:57",transformationPattern="JSONPATH:$.Battery"]
+}

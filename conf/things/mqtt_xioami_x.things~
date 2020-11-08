@@ -1,0 +1,5 @@
+/* attic */
+Thing mqtt:topic:xioami_x  "Xioami Humidity and Temperatur" (mqtt:broker:home) @ "Attic" {
+Channels:
+    Type number : temperature   "Temperature"       [ stateTopic="home/xioami_sensor/4c:65:a8:db:a8:07",transformationPattern="JSONPATH:$.Temp"]
+}
